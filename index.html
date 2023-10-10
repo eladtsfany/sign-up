@@ -31,27 +31,30 @@
 
                     <div class="input-wrapper">
                         <label for="first-name">FIRST NAME</label>
-                        <input minlength="2" maxlength="16" type="text" name="first-name" id="first-name">
+                        <input pattern="^\w\D{2,}" required minlength="3" maxlength="16" type="text" name="first-name"
+                            id="first-name">
                     </div>
                     <div class="input-wrapper">
                         <label for="last-name">LAST NAME</label>
-                        <input minlength="2" maxlength="16" type="text" name="last-name" id="last-name">
+                        <input pattern="^\w\D{2,}" required minlength="3" maxlength="16" type="text" name="last-name"
+                            id="last-name">
                     </div>
                     <div class="input-wrapper">
                         <label for="email">EMAIL</label>
-                        <input maxlength="46" type="email" name="email" id="email">
+                        <input required maxlength="46" type="email" name="email" id="email">
                     </div>
                     <div class="input-wrapper">
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input minlength="10" maxlength="11" type="text" name="phone-number" id="phone-number">
+                        <input pattern="^\d{10,11}" minlength="10" maxlength="11" type="text" name="phone-number"
+                            id="phone-number">
                     </div>
                     <div class="input-wrapper">
                         <label for="password">PASSWORD</label>
-                        <input minlength="4" maxlength="32" type="password" name="password" id="password">
+                        <input required minlength="4" maxlength="32" type="password" name="password" id="password">
                     </div>
                     <div class="input-wrapper">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input minlength="4" maxlength="32" type="password" name="confirm-password"
+                        <input required minlength="4" maxlength="32" type="password" name="confirm-password"
                             id="confirm-password">
                     </div>
                 </div>
